@@ -29,7 +29,9 @@ public class LoginMain {
 			System.out.println("로그인 성공");
 		} catch(UserNotFoundException | PasswordDismatchException e) {
 			System.out.println(e.getMessage());
-		}		
+		} finally {
+			scanner.close();
+		}
 
 	}
 	
