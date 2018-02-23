@@ -36,6 +36,19 @@ public class Gugudan {
 		//
 		//  이 부분에 적당한 코드를 작성합니다.  
 		//
+		int answer = s.nextInt();
+//		for(int a: answerNumbers){
+//			if(answer == a){
+//				System.out.println("정답");
+//				break;
+//			}
+//		}
+//		System.out.println("오답");
+		if( answer == resultNumber ){
+			System.out.println("정답");
+		} else {
+			System.out.println("오답");
+		}
 	}
 
 	private static int randomize( int lNum, int rNum ) {
@@ -57,7 +70,7 @@ public class Gugudan {
 	        
 	        boolean evaluted = false;
 	        for( int i = 0; i < occupied; i++ ) {
-	        	if( /* 이 부분에 적당 조건의 코드를 입력 합니다. */ ) {
+	        	if( (resultNumber == random) || (boardNumbers[i] == random) ) {
 	        		evaluted = true;
 	        		break;
 	        	}
